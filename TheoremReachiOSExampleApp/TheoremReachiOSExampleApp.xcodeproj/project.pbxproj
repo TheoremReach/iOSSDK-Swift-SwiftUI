@@ -6,13 +6,50 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B5A9BF472F32A3B000C7BC59 /* TheoremReachSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A9BF432F32A3A400C7BC59 /* TheoremReachSDK.xcframework */; };
+		B5A9BF482F32A3B000C7BC59 /* TheoremReachSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5A9BF432F32A3A400C7BC59 /* TheoremReachSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B5A9BF4A2F32A3B200C7BC59 /* PlaytimeMonetize.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A9BF452F32A3AD00C7BC59 /* PlaytimeMonetize.xcframework */; };
+		B5A9BF4B2F32A3B200C7BC59 /* PlaytimeMonetize.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5A9BF452F32A3AD00C7BC59 /* PlaytimeMonetize.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B5A9BF492F32A3B100C7BC59 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B5A9BF482F32A3B000C7BC59 /* TheoremReachSDK.xcframework in Embed Frameworks */,
+				B5A9BF4B2F32A3B200C7BC59 /* PlaytimeMonetize.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		B5A9BEE62F2FB90500C7BC59 /* TheoremReachiOSExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheoremReachiOSExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5A9BF432F32A3A400C7BC59 /* TheoremReachSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = TheoremReachSDK.xcframework; sourceTree = "<group>"; };
+		B5A9BF452F32A3AD00C7BC59 /* PlaytimeMonetize.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:MWCGP9HPPJ:adjoe GmbH"; lastKnownFileType = wrapper.xcframework; path = PlaytimeMonetize.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B5A9BF4C2F32A45D00C7BC59 /* Exceptions for "TheoremReachiOSExampleApp" folder in "TheoremReachiOSExampleApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B5A9BEE52F2FB90500C7BC59 /* TheoremReachiOSExampleApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		B5A9BEE82F2FB90500C7BC59 /* TheoremReachiOSExampleApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B5A9BF4C2F32A45D00C7BC59 /* Exceptions for "TheoremReachiOSExampleApp" folder in "TheoremReachiOSExampleApp" target */,
+			);
 			path = TheoremReachiOSExampleApp;
 			sourceTree = "<group>";
 		};
@@ -23,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5A9BF472F32A3B000C7BC59 /* TheoremReachSDK.xcframework in Frameworks */,
+				B5A9BF4A2F32A3B200C7BC59 /* PlaytimeMonetize.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +71,8 @@
 		B5A9BEDD2F2FB90500C7BC59 = {
 			isa = PBXGroup;
 			children = (
+				B5A9BF432F32A3A400C7BC59 /* TheoremReachSDK.xcframework */,
+				B5A9BF452F32A3AD00C7BC59 /* PlaytimeMonetize.xcframework */,
 				B5A9BEE82F2FB90500C7BC59 /* TheoremReachiOSExampleApp */,
 				B5A9BEE72F2FB90500C7BC59 /* Products */,
 			);
@@ -55,6 +96,7 @@
 				B5A9BEE22F2FB90500C7BC59 /* Sources */,
 				B5A9BEE32F2FB90500C7BC59 /* Frameworks */,
 				B5A9BEE42F2FB90500C7BC59 /* Resources */,
+				B5A9BF492F32A3B100C7BC59 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

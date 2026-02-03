@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftUI
+import Combine
 import TheoremReachSDK
 import WebKit
 import AppTrackingTransparency
@@ -19,10 +20,10 @@ class AppDelegate: NSObject, UIApplicationDelegate, ObservableObject {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // PlaytimeMonetize styling
-        if let frameworkVCClass = NSClassFromString("PlaytimeMonetize.WebOfferwallViewController"),
+        if let frameworkVCClass = NSClassFromString("PlaytimeMonetize.WebOfferwallViewController") as? UIAppearanceContainer.Type,
            let wkScrollClass = NSClassFromString("WKScrollView") as? UIAppearance.Type {
             if let appearanceClass = wkScrollClass.appearance(whenContainedInInstancesOf: [frameworkVCClass]) as? UIView {
-                appearanceClass.backgroundColor = TheoremReach.colorWithHexString("#1B0C47")
+                appearanceClass.backgroundColor = TheoremReach.color(withHexString: "#1B0C47")
             }
         } else {
             if NSClassFromString("PlaytimeMonetize.WebOfferwallViewController") == nil {
@@ -47,10 +48,14 @@ class AppDelegate: NSObject, UIApplicationDelegate, ObservableObject {
     func initializeTheoremReachSDK() {
         TheoremReach.initWithApiKey("9148c4176f36f5302eb0a56695eb", userId: "23344342252")
 
-        let tr = TheoremReach.getInstance()
-        tr.setRewardListenerDelegate(self)
-        tr.setSurveyListenerDelegate(self)
-        tr.setSurveyAvailableDelegate(self)
+        guard let tr = TheoremReach.getInstance() else {
+            print("ERROR: Failed to get TheoremReach instance")
+            return
+        }
+        
+        tr.rewardListenerDelegate = self
+        tr.surveyListenerDelegate = self
+        tr.surveyAvailableDelegate = self
 
         // Customize navigation bar look
         tr.navigationBarTextColor = "#FFFFFF"

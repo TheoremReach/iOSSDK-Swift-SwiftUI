@@ -65,15 +65,8 @@ struct ContentView: View {
     }
 
     func launchTheoremReach() {
-        // Get root view controller for presentation
-        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-              let rootViewController = windowScene.windows.first?.rootViewController else {
-            print("ERROR: Could not get root view controller")
-            return
-        }
-
         // Launch TheoremReach SDK
-        TheoremReach.getInstance().showRewardCenter(from: rootViewController)
+        TheoremReach.showRewardCenter()
     }
 }
 
