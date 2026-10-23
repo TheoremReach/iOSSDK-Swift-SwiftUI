@@ -7,31 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B5A9BF472F32A3B000C7BC59 /* TheoremReachSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A9BF432F32A3A400C7BC59 /* TheoremReachSDK.xcframework */; };
-		B5A9BF482F32A3B000C7BC59 /* TheoremReachSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5A9BF432F32A3A400C7BC59 /* TheoremReachSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B5A9BF4A2F32A3B200C7BC59 /* PlaytimeMonetize.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A9BF452F32A3AD00C7BC59 /* PlaytimeMonetize.xcframework */; };
-		B5A9BF4B2F32A3B200C7BC59 /* PlaytimeMonetize.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5A9BF452F32A3AD00C7BC59 /* PlaytimeMonetize.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4E1A2F7F2FA1000100000001 /* TheoremReachSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 4E1A2F7F2FA1000100000002 /* TheoremReachSDK */; };
+		4E1A2F7F2FA1000100000004 /* PlaytimeMonetize in Frameworks */ = {isa = PBXBuildFile; productRef = 4E1A2F7F2FA1000100000005 /* PlaytimeMonetize */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		B5A9BF492F32A3B100C7BC59 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				B5A9BF482F32A3B000C7BC59 /* TheoremReachSDK.xcframework in Embed Frameworks */,
-				B5A9BF4B2F32A3B200C7BC59 /* PlaytimeMonetize.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B5A9BEE62F2FB90500C7BC59 /* TheoremReachiOSExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheoremReachiOSExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5A9BF432F32A3A400C7BC59 /* TheoremReachSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = TheoremReachSDK.xcframework; sourceTree = "<group>"; };
-		B5A9BF452F32A3AD00C7BC59 /* PlaytimeMonetize.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:MWCGP9HPPJ:adjoe GmbH"; lastKnownFileType = wrapper.xcframework; path = PlaytimeMonetize.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -60,8 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5A9BF472F32A3B000C7BC59 /* TheoremReachSDK.xcframework in Frameworks */,
-				B5A9BF4A2F32A3B200C7BC59 /* PlaytimeMonetize.xcframework in Frameworks */,
+				4E1A2F7F2FA1000100000001 /* TheoremReachSDK in Frameworks */,
+				4E1A2F7F2FA1000100000004 /* PlaytimeMonetize in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,8 +52,6 @@
 		B5A9BEDD2F2FB90500C7BC59 = {
 			isa = PBXGroup;
 			children = (
-				B5A9BF432F32A3A400C7BC59 /* TheoremReachSDK.xcframework */,
-				B5A9BF452F32A3AD00C7BC59 /* PlaytimeMonetize.xcframework */,
 				B5A9BEE82F2FB90500C7BC59 /* TheoremReachiOSExampleApp */,
 				B5A9BEE72F2FB90500C7BC59 /* Products */,
 			);
@@ -96,7 +75,6 @@
 				B5A9BEE22F2FB90500C7BC59 /* Sources */,
 				B5A9BEE32F2FB90500C7BC59 /* Frameworks */,
 				B5A9BEE42F2FB90500C7BC59 /* Resources */,
-				B5A9BF492F32A3B100C7BC59 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -107,6 +85,8 @@
 			);
 			name = TheoremReachiOSExampleApp;
 			packageProductDependencies = (
+				4E1A2F7F2FA1000100000002 /* TheoremReachSDK */,
+				4E1A2F7F2FA1000100000005 /* PlaytimeMonetize */,
 			);
 			productName = TheoremReachiOSExampleApp;
 			productReference = B5A9BEE62F2FB90500C7BC59 /* TheoremReachiOSExampleApp.app */;
@@ -136,6 +116,10 @@
 			);
 			mainGroup = B5A9BEDD2F2FB90500C7BC59;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				4E1A2F7F2FA1000100000003 /* XCRemoteSwiftPackageReference "iOSSDK" */,
+				4E1A2F7F2FA1000100000006 /* XCRemoteSwiftPackageReference "adjoe-monetize-spm" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B5A9BEE72F2FB90500C7BC59 /* Products */;
 			projectDirPath = "";
@@ -374,6 +358,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4E1A2F7F2FA1000100000003 /* XCRemoteSwiftPackageReference "iOSSDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TheoremReach/iOSSDK";
+			requirement = {
+				branch = "feat/mmp-release";
+				kind = branch;
+			};
+		};
+		4E1A2F7F2FA1000100000006 /* XCRemoteSwiftPackageReference "adjoe-monetize-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adjoeio/adjoe-monetize-spm";
+			requirement = {
+				kind = exactVersion;
+				version = 4.5.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4E1A2F7F2FA1000100000002 /* TheoremReachSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4E1A2F7F2FA1000100000003 /* XCRemoteSwiftPackageReference "iOSSDK" */;
+			productName = TheoremReachSDK;
+		};
+		4E1A2F7F2FA1000100000005 /* PlaytimeMonetize */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4E1A2F7F2FA1000100000006 /* XCRemoteSwiftPackageReference "adjoe-monetize-spm" */;
+			productName = PlaytimeMonetize;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B5A9BEDE2F2FB90500C7BC59 /* Project object */;
 }

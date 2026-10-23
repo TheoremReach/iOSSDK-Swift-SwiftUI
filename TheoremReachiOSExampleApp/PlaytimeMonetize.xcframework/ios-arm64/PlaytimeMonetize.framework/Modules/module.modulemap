@@ -1,4 +1,0 @@
-framework module PlaytimeMonetize {
-  header "PlaytimeMonetize-Swift.h"
-  requires objc
-}
