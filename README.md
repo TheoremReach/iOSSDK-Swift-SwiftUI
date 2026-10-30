@@ -59,7 +59,7 @@ TheoremReach SDK (Objective-C based) is integrated using `UIApplicationDelegateA
   cancelled page load no longer shows "Unexpected Error" or leaves the loading bar
 - Edge swipes go back and forward in the reward center
 - The close and refresh buttons are built in, with VoiceOver names, instead of downloaded before each open
-- `rewardCenterViewController` is nil once the reward center closes, and Moments surveys present full screen
+- `rewardCenterViewController` is nil once the reward center closes
 - `setWebViewInspectable:` lets Safari's Web Inspector attach to the reward center in your debug builds
 - Removed: `TRSurveyView`'s `activityIndicator`, `overlay` and `sendPlaytimeInitialized`, and `TRSurveyViewController`'s
   `initPlaytime:`. `TRSurveyView`'s `delegate` is weak
