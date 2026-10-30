@@ -46,14 +46,14 @@ jobs:
           xcrun simctl boot "$udid"
           xcrun simctl bootstatus "$udid" -b
           xcrun simctl install "$udid" build/dd/Build/Products/Debug-iphonesimulator/TheoremReachiOSExampleApp.app
-          xcrun simctl launch "$udid" com.theoremreach.TheoremReachiOSExampleApp
+          xcrun simctl launch "$udid" com.theoremreach.TheoremReachSwiftUIExample
           sleep 20
           mkdir -p build/launch
           xcrun simctl io "$udid" screenshot build/launch/launch.png
           xcrun simctl spawn "$udid" log show --last 2m --style compact \
             --predicate 'process == "TheoremReachiOSExampleApp"' > build/launch/app.log || true
           # Still running 20 s in: launchctl lists the app with its pid.
-          xcrun simctl spawn "$udid" launchctl list | grep "UIKitApplication:com.theoremreach.TheoremReachiOSExampleApp" \
+          xcrun simctl spawn "$udid" launchctl list | grep "UIKitApplication:com.theoremreach.TheoremReachSwiftUIExample" \
             | awk '{ print $1 }' | grep -qE '^[0-9]+$'
 
       - name: Keep the launch screenshot and log
