@@ -139,4 +139,8 @@ Add the following to your `podfile`
 
 [TheoremReach Unity SDK Integration](https://theoremreach.com/docs/unity)
 
-[TheoremReach Javascript Web SDK Integration](https://theoremreach.com/docs/web)  
+[TheoremReach Javascript Web SDK Integration](https://theoremreach.com/docs/web)
+
+## License
+
+The example's code is under the MIT License; see [LICENSE](LICENSE). The SDKs it uses aren't covered by it: the TheoremReach SDK, from its Swift package, is licensed under the [TheoremReach Publisher Terms and Conditions](https://info.theoremreach.com/terms-of-service/), and adjoe's PlaytimeMonetize is under adjoe's terms.
