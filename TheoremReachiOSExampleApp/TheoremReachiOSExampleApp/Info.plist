@@ -6,6 +6,8 @@
 	<string>TheoremReach Demo App</string>
 	<key>NSUserTrackingUsageDescription</key>
 	<string>The TR Example App asks for your IDFA to show how it functions with or without access. The SDK will NEVER ask on your behalf.</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
