@@ -366,8 +366,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/TheoremReach/iOSSDK";
 			requirement = {
-				branch = "feat/mmp-release";
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.6.0;
 			};
 		};
 		4E1A2F7F2FA1000100000006 /* XCRemoteSwiftPackageReference "adjoe-monetize-spm" */ = {
